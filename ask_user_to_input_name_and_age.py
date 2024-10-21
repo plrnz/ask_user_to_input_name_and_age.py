@@ -20,3 +20,9 @@ age: [] # type: ignore
 # Start of Loop
 # Loop 1: Ask for input
 while True:
+    # Loop 2: Ask for a valid name
+    name = input("Please input a name: ")
+    if name.isalpha():
+        break
+    else:
+        print("Invalid name. Please input a valid name: ")
