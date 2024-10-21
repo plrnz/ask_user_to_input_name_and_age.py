@@ -17,3 +17,6 @@
 name: [] # type: ignore
 age: [] # type: ignore
 
+# Start of Loop
+# Loop 1: Ask for input
+while True:
