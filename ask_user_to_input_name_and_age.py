@@ -13,3 +13,7 @@
 # 5. Display the oldest person's name and age
 # 6. End
 
+# List to store the name and age
+name: [] # type: ignore
+age: [] # type: ignore
+
