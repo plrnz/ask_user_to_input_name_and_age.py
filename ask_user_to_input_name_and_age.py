@@ -39,3 +39,8 @@ while True:
         # Store the name and age in the list
         name.append(name)
         age.append(age)
+
+        # Ask the user if they want to add another entry (yes/no)
+        retry = input("Do you want to add another participant? ('y/n): ").lower()
+        if retry == "n":
+            break
