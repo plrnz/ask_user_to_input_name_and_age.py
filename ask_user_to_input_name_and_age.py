@@ -27,12 +27,21 @@ while True:
             break
         else:
             print("Invalid name. Please input a valid name: ")
+    
+    # Loop 3: Ask the user to input a valid age
+    while True:
+        age = input("Please Input age: ")
+        if age.isdigit(): # Numbers only. No special characters
+            age = int(age)
+            break
+        else:
+            print("Invalid age. Please input again: ")
 
-        # Store the name and age in the list
+    # Store the name and age in the list
         name.append(name)
         age.append(age)
 
-        # Ask the user if they want to add another entry (yes/no)
-        retry = input("Do you want to add another participant? ('y/n): ").lower()
-        if retry == "n":
-            break
+    # Ask the user if they want to add another entry (yes/no)
+    retry = input("Do you want to add another participant? ('y/n): ").lower()
+    if retry == "n":
+        break
