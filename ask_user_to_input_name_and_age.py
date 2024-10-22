@@ -21,20 +21,12 @@ age: [] # type: ignore
 # Loop 1: Ask for input
 while True:
     # Loop 2: Ask for a valid name
-    name = input("Please input a name: ")
-    if name.isalpha(): # Upper case and lower case letters only
-        break
-    else:
-        print("Invalid name. Please input a valid name: ")
- 
- # Loop 3: Ask for a valid age
-while True:
-    age = input("Please input age: ")
-    if age.isdigit(): # Numbers only. No special characters
-        age = int(age) # Converts age to integer
-        break
-    else:
-        print("Invalid age. Please input again: ")
+    while True:
+        name = input("Please input a name: ")
+        if name.isalpha(): # Upper case and lower case letters only
+            break
+        else:
+            print("Invalid name. Please input a valid name: ")
 
         # Store the name and age in the list
         name.append(name)
