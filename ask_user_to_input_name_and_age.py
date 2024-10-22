@@ -36,6 +36,6 @@ while True:
     else:
         print("Invalid age. Please input again: ")
 
-# Store the name and age in the list
-name.append(name)
-age.append(age)
+        # Store the name and age in the list
+        name.append(name)
+        age.append(age)
