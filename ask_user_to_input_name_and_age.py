@@ -1,3 +1,18 @@
+# Pseudocodes
+# 1. Start
+# 2. Initialize an empty list called people
+# 3. Loop1: Ask for input
+    # a. Loop2: Ask for a valid name
+        # i. IF name is not valid, display error and ask again
+    # b. Loop3: Ask for valid a valid age
+        # i. If age is not valid, diplay error and ask again
+    # c. Store name and age in the list
+    # d. Ask user if they want to add another entry (yes/no)
+    # e. If no, break the loop
+# 4. If the list is not empty, find the oldest person
+# 5. Display the oldest person's name and age
+# 6. End
+
 # List to store the name and age
 names = [] # List for storing names
 ages = [] # List for storing ages
@@ -15,7 +30,7 @@ while True:
     
     # Loop 3: Ask the user to input a valid age
     while True:
-        participants_ages = input("Please Input age: ")
+        participants_ages = input("Please input age: ")
         if participants_ages.isdigit(): # Numbers only. No special characters
             participants_ages = int(participants_ages)
             break
@@ -34,6 +49,6 @@ while True:
 # Check who is the oldest
 if len(names) > 0:
     oldest_index = ages.index(max(ages))
-    print(f"The oldest person is {names[oldest_index]} with an age of {ages[oldest_index]}.")
+    print(f"The oldest person among the participants is {names[oldest_index]} with an age of {ages[oldest_index]} years old.")
 else:
     print("No valid entries were addded.")
