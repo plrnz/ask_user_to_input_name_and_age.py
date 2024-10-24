@@ -43,6 +43,8 @@ while True:
             participants_ages = int(participants_ages)
             if 0 <= participants_ages <= 150: 
                 break
+            else:
+                print("Ivalid age. Age must be between 0 - 150.")
         else:
             print("Invalid age. Please input again: ")
 
@@ -57,7 +59,12 @@ while True:
 
 # Check who is the oldest
 if len(names) > 0:
-    oldest_index = ages.index(max(ages))
-    print(f"The oldest person among the participants is {names[oldest_index]} with an age of {ages[oldest_index]} years old.")
+    max_age = max(ages) # Finds the maximum age
+    print(f"\nThe participants with the oldest age are:")
+
+    # Loop through ages to find particapants with the maximum age
+    for i in range(len(ages)):
+        if ages[i] == max_age:
+            print(f"{names[i]} with an age of {ages[i]} years old.") # Displays all the participants with the oldest age
 else:
     print("No valid entries were addded.")
