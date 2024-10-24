@@ -41,7 +41,8 @@ while True:
         participants_ages = input("Please input age: ")
         if participants_ages.isdigit(): # Numbers only. No special characters
             participants_ages = int(participants_ages)
-            break
+            if 0 <= participants_ages <= 150: 
+                break
         else:
             print("Invalid age. Please input again: ")
 
